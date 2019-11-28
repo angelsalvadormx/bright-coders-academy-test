@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ruby on Rails development, ecommerce design | MagmaLabs</title>
-
+  <link rel='shortcut icon' type='image/x-icon' href='https://www.magmalabs.io/favicon.ico' />
   <link rel="stylesheet" href="./css/magma.css">
   <!-- Natasha Framework-->
   <link rel="stylesheet" href="https://angelsalvadormx.github.io/natasha-framework/nat.css">
 </head>
 
 <body>
-  <header id="header" class="w-100 position-absolute d-flex justify-content-between container">
+  <header id="header" activo="false" class="w-100 position-absolute d-flex justify-content-between container">
     <picture class="d-block w-20"></picture>
     <nav class="w-50">
       <ul class="d-flex justify-content-araund">
@@ -111,7 +111,24 @@
       </footer>
     </main>
   </section>
-  <section class="h-100"></section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+        console.log(st);
+        if(st>70){
+          $('#header').attr('activo','process')
+        }else{
+          $('#header').attr('activo','false')
+        }
+        if(st > 140){
+          $('#header').attr('activo','true')
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

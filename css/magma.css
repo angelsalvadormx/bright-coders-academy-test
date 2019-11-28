@@ -63,9 +63,31 @@ body {
 
 #header {
   background-color: transparent;
-  top: 0;
+  z-index:3;
+  transition: top .3s ease-out;
+}
+#header[activo="true"]{
+  top:0;
+  position: fixed;
+  background-color: #362f2f;
+  height: 70px;
+  overflow: hidden;
 }
 
+#header[activo="process"] picture,
+#header[activo="true"] picture{
+  margin-top:  11px !important;
+}
+#header[activo="process"] ul li,
+#header[activo="true"] ul li{
+  display: flex;
+  align-items: center;
+  padding-top:0; 
+  height: 70px;
+}
+#header[activo="process"]{
+  top:-20px;
+}
 #header>nav>ul>li {
   padding: 48px 8px 0px;
   transition: all .2s ease-in-out;
@@ -110,7 +132,6 @@ body {
 #header>nav>ul>li:nth-child(5):hover:after {
   height: 120%;
 }
-
 #header>picture {
   margin-top: 30px;
   background: url(https://www.magmalabs.io/images/sprites/sprite_home_desktop.svg) -273px -15px no-repeat;
