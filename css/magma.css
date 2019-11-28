@@ -94,7 +94,13 @@ body {
   position: relative;
   z-index: 1;
 }
-
+#header .btn-menu{
+  background: url(https://www.magmalabs.io/images/sprites/sprite_home_mobile.svg) -24px -115px no-repeat;
+  height: 16px;
+  width: 21px;
+  display: none;
+  margin: 15px;
+}
 #header>nav>ul>li:after {
   content: "";
   position: absolute;
@@ -115,7 +121,7 @@ body {
 }
 
 #header>nav>ul>li:hover a {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 #header>nav>ul>li:hover:after {
