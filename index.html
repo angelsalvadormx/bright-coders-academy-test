@@ -17,10 +17,10 @@
     <picture class="d-block w-20"></picture>
     <nav class="w-50">
       <ul class="d-flex justify-content-araund">
-        <li><a href="#" class="t-color-white">OUR SERVICES</a></li>
-        <li><a href="#" class="t-color-white">CASE STUDIES</a></li>
-        <li><a href="#" class="t-color-white">ABOUT US</a></li>
-        <li><a href="#" class="t-color-white">BLOG</a></li>
+        <li><a href="#" class="d-flex align-items-center t-color-white">OUR SERVICES<i class="icon-arrow fas fa-chevron-down"></i></a></li>
+        <li><a href="#" class="d-flex align-items-center t-color-white">CASE STUDIES</a></li>
+        <li><a href="#" class="d-flex align-items-center t-color-white">ABOUT US</a></li>
+        <li><a href="#" class="d-flex align-items-center t-color-white">BLOG</a></li>
         <li><a href="#" class="c-magma">CONTACT US</a></li>
       </ul>
     </nav>
@@ -113,19 +113,20 @@
   </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/66b48f7806.js" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
       $(window).scroll(function (event) {
         var st = $(this).scrollTop();
-        console.log(st);
-        if(st>70){
-          $('#header').attr('activo','process')
-        }else{
-          $('#header').attr('activo','false')
+        if (st > 70) {
+          $('#header').attr('activo', 'process');
+          if (st > 140) {
+            $('#header').attr('activo', 'true')
+          }
+        } else {
+          $('#header').attr('activo', 'false')
         }
-        if(st > 140){
-          $('#header').attr('activo','true')
-        }
+
       });
     });
   </script>

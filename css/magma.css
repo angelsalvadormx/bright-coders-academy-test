@@ -105,7 +105,10 @@ body {
   background-color: #f84848;
   transition: top .3s ease-out, height .3s ease-out;
 }
-
+#header .icon-arrow{
+  margin-left: 8px;
+  font-size: 1.4em;
+}
 #header>nav>ul>li>a {
   color: inherit;
   transition: color .3s ease-in-out;
