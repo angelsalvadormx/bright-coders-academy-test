@@ -36,7 +36,7 @@ html, body {
   font-family: 'Lato-Light';
   font-style: normal;
   font-weight: 300;
-  src: url(/angelsalvadormx_git/bright-coders-academy/fonts/Lato-Light.ttf);
+  src: url(../fonts/Lato-Light.ttf);
 }
 
 body {
@@ -95,7 +95,7 @@ body {
   z-index: 1;
 }
 #header .btn-menu{
-  background: url(https://www.magmalabs.io/images/sprites/sprite_home_mobile.svg) -24px -115px no-repeat;
+  background: url(../imagenes/sprite_home_mobile.svg) -24px -115px no-repeat;
   height: 16px;
   width: 21px;
   display: none;
@@ -143,21 +143,21 @@ body {
 }
 #header>picture {
   margin-top: 30px;
-  background: url(https://www.magmalabs.io/images/sprites/sprite_home_desktop.svg) -273px -15px no-repeat;
+  background: url(../imagenes/sprite_home_desktop.svg) -273px -15px no-repeat;
   height: 41px;
   width: 217px;
 }
 
 /* Home */
 
-#home {
-  background: url(https://www.magmalabs.io/images/hero/home_hero@2x.jpg) center #3a3030;
+#home{
+  background: url(../imagenes/home_hero@2x.jpg) center #3a3030;
   background-size: cover;
 }
 
 #home>main {
   max-width: 1477px;
-  width: 64%;
+  width: 67%;
   left: 50%;
   top: 45%;
   transform: translate(-50%, -50%);
@@ -183,7 +183,14 @@ body {
 #home>main ol li {
   margin-right: 32px;
 }
-
+.logo-magma{
+  display: none;
+  background: url(../imagenes/sprite_home_desktop.svg) no-repeat;
+  height: 124px;
+  width: 257px;
+  margin: 0 auto;
+  transform: scale(.7,.7);
+}
 #home>main ol li:before {
   color: #f84848;
   content: "• ";
@@ -194,7 +201,7 @@ body {
 }
 
 #home>footer>i {
-  background: url(https://www.magmalabs.io/images/sprites/sprite_scroll-home.svg) 4px -13px no-repeat;
+  background: url(../imagenes/sprite_scroll-home.svg) 4px -13px no-repeat;
   height: 66px;
   width: 108px;
 }
@@ -212,7 +219,7 @@ body {
 }
 
 .sect-web picture {
-  background: url(https://www.magmalabs.io/images/sprites/sprite_design_desk_sprite.svg) -648px -275px no-repeat;
+  background: url(../imagenes/sprite_design_desk_sprite.svg) -648px -275px no-repeat;
   height: 94px;
   width: 227px;
 }
@@ -222,13 +229,13 @@ body {
 }
 
 .sect-ecommerce picture {
-  background: url(https://www.magmalabs.io/images/sprites/sprite_desktop-services.svg) -267px -267px no-repeat;
+  background: url(../imagenes/sprite_desktop-services.svg) -267px -267px no-repeat;
   height: 99px;
   width: 194px;
 }
 
 .sect-mobile picture {
-  background: url(https://www.magmalabs.io/images/sprites/sprite_home_mobile_icon.svg) -18px -18px no-repeat;
+  background: url(../imagenes/sprite_home_mobile_icon.svg) -18px -18px no-repeat;
   height: 87px;
   width: 152px;
 }
@@ -242,7 +249,7 @@ body {
 }
 
 .sect-ux picture {
-  background: url(https://www.magmalabs.io/images/sprites/sprite_design_desk_sprite.svg) -71px -52px no-repeat;
+  background: url(../imagenes/sprite_design_desk_sprite.svg) -71px -52px no-repeat;
   height: 102px;
   width: 131px;
 }

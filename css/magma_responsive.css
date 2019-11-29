@@ -1,77 +1,108 @@
 /* width 1015 */
-@media screen and (max-width:1015px){
+
+@media screen and (max-width:1015px) {
   .title {
-    padding-top:50px;
+    padding-top: 50px;
     font-size: 1.875em;
   }
   /* header */
-  #header nav{
+  #header nav {
     display: none;
   }
-  #header .btn-menu{
+  #header .btn-menu {
     display: block;
   }
-#header[activo="true"]{
-height: 50px;
+  #header[activo="true"] {
+    height: 50px;
   }
   #header>picture {
     background: url(https://www.magmalabs.io/images/sprites/sprite_home_desktop.svg) -166px -10px no-repeat;
     background-size: auto;
-height: 41px;
-width: 217px;
-background-size: 534px;
+    height: 41px;
+    width: 217px;
+    background-size: 534px;
     margin: 10px 0px;
   }
   /* Home */
   .title-magma {
-       font-size: 1.875em;
-}
-   #home > main ol,
-  .subtitle-magma{
+    font-size: 1.875em;
+  }
+  #home>main ol, .subtitle-magma {
     font-size: 1rem;
   }
-  #home > main {
+  #home>main {
     width: 75%;
   }
-  #home .subtitle-magma{
+  #home .subtitle-magma {
     padding-top: 10px;
   }
   /*digital products*/
-  #digital-products main{
+  #digital-products main {
     flex-direction: column;
     align-items: center;
   }
-  #digital-products .card-item{
+  #digital-products .card-item {
     width: 100%;
     border-bottom: 2px solid #ccc;
     margin-top: 30px;
     padding-bottom: 10px;
   }
-#digital-products .card-item main p {
-  font-size: 1rem;
+  #digital-products .card-item main p {
+    font-size: 1rem;
   }
   /*concept  solution*/
   .decription-section {
     font-size: 1rem;
   }
   #concept-solution .img-process {
-    
-  width: 80%;
+    width: 80%;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:767px){
+  .title-magma {
+    font-size: 1.25em;
+  }
+  .subtitle-magma{
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+  #home>main ol{
+    font-size: 13px;
+  }
+  .logo-magma{
+    display: block;
+  }
+  #header picture{
+    display: none;
+  }
+  #header[activo="true"] picture{
+    background: url(../imagenes/sprite_home_mobile.svg) -225px -15px no-repeat;
+    height: 32px;
+    width: 38px;
+    margin: 0 auto;
+    display: block;
+  }
+  #header .btn-menu{
+    position: absolute;
+    right: 0;
+  }
+  #home > footer{
+    display: none;
+  }
+  #home main{
+    left: 0;
+    top: 0;
+    transform: none;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  #home{
+    background-image: url(../imagenes/home_hero@1x.jpg);
+  }
+  .container {
+    padding: 0 3px !important;
+  }
+}

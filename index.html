@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ruby on Rails development, ecommerce design | MagmaLabs</title>
-  <link rel='shortcut icon' type='image/x-icon' href='https://www.magmalabs.io/favicon.ico' />
+  <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
   <link rel="stylesheet" href="./css/magma.css">
   <link rel="stylesheet" href="./css/magma_responsive.css">
   
@@ -17,7 +17,7 @@
 <body>
   <header id="header" activo="false" class="w-100 position-absolute d-flex justify-content-between container">
     <picture class="d-block w-20"></picture>
-    <nav class="w-50">
+    <nav>
       <ul class="d-flex justify-content-araund">
         <li><a href="#" class="d-flex align-items-center t-color-white">OUR SERVICES<i class="icon-arrow fas fa-chevron-down"></i></a></li>
         <li><a href="#" class="d-flex align-items-center t-color-white">CASE STUDIES</a></li>
@@ -30,6 +30,7 @@
   </header>
   <section id="home" class="h-100 w-100">
     <main class="position-relative">
+      <picture class="logo-magma"></picture>
       <h1 class="c-magma-2 text-center title-magma">MagmaLabs builds tailored software solutions to help companies
         execute their
         vision.</h1>
@@ -97,7 +98,7 @@
     <h3 class="title c-title text-center">From concept to solution</h3>
     <main class="text-center">
       <picture class="d-block">
-        <img src="https://www.magmalabs.io/images/services/pm.svg" alt="Ecommerce Implementation Image">
+        <img src="./imagenes/pm.svg" alt="Ecommerce Implementation Image">
       </picture>
       <p class="center-margin decription-section">With the help of Agile methodologies and multidisciplinary teams,
         MagmaLabs ensures the quality of product development and sustainable work-pace oriented to give the best value
@@ -105,7 +106,7 @@
         of focused work. </p>
       <h4 class="c-title">Our product development process</h4>
       <picture class="img-process d-block center-margin">
-        <img alt="our process image" src="https://www.magmalabs.io/images/process-horizontal-01.svg">
+        <img alt="our process image" src="./imagenes/process-horizontal-01.svg">
       </picture>
       <footer>
         <a href="#" class="btn-magma">
@@ -114,9 +115,9 @@
       </footer>
     </main>
   </section>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://kit.fontawesome.com/66b48f7806.js" crossorigin="anonymous"></script>
+  <section id="layer-black"></section>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/66b48f7806.js"></script>
   <script>
     $(document).ready(function () {
       $(window).scroll(function (event) {
