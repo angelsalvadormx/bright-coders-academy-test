@@ -78,6 +78,12 @@ body {
   right: 0;
 }
 
+#header .sec-social{
+  margin-top: 50px;
+}
+#header .sec-social i{
+  margin-left: 50px;
+}
 #header.active-menu nav ul li:last-child a {
   border: 2px solid #f84848;
   padding: 0 26px;
@@ -91,8 +97,12 @@ body {
   transform: translateX(-50%);
 }
 
-#header nav .hide-menu, #header nav picture, #header.active-menu .btn-menu {
+#header nav .hide-menu,#header .sec-social, #header nav picture, #header.active-menu .btn-menu {
   display: none;
+}
+
+#header.active-menu nav picture, #header.active-menu nav .hide-menu,#header.active-menu .sec-social {
+  display: block;
 }
 
 #header nav .hide-menu {
@@ -103,9 +113,6 @@ body {
   top: 13px;
 }
 
-#header.active-menu nav picture, #header.active-menu nav .hide-menu {
-  display: block;
-}
 
 #header.active-menu nav picture {
   background: url(../imagenes/sprite_home_mobile.svg) -225px -15px no-repeat;
