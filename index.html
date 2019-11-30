@@ -9,7 +9,7 @@
   <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
   <link rel="stylesheet" href="./css/magma.css">
   <link rel="stylesheet" href="./css/magma_responsive.css">
-  
+
   <!-- Natasha Framework-->
   <link rel="stylesheet" href="https://angelsalvadormx.github.io/natasha-framework/nat.css">
 </head>
@@ -18,8 +18,11 @@
   <header id="header" activo="false" class="w-100 position-absolute d-flex justify-content-between container">
     <picture class="d-block w-20"></picture>
     <nav>
+      <i class="fas fa-long-arrow-alt-right hide-menu"></i>
+      <picture class="d-block w-20"></picture>
       <ul class="d-flex justify-content-araund">
-        <li><a href="#" class="d-flex align-items-center t-color-white">OUR SERVICES<i class="icon-arrow fas fa-chevron-down"></i></a></li>
+        <li><a href="#" class="d-flex align-items-center t-color-white">OUR SERVICES<i
+              class="icon-arrow fas fa-chevron-down"></i></a></li>
         <li><a href="#" class="d-flex align-items-center t-color-white">CASE STUDIES</a></li>
         <li><a href="#" class="d-flex align-items-center t-color-white">ABOUT US</a></li>
         <li><a href="#" class="d-flex align-items-center t-color-white">BLOG</a></li>
@@ -97,7 +100,7 @@
   <section id="concept-solution">
     <h3 class="title c-title text-center">From concept to solution</h3>
     <main class="text-center">
-      <picture class="d-block">
+      <picture class="d-block img">
         <img src="./imagenes/pm.svg" alt="Ecommerce Implementation Image">
       </picture>
       <p class="center-margin decription-section">With the help of Agile methodologies and multidisciplinary teams,
@@ -115,22 +118,32 @@
       </footer>
     </main>
   </section>
-  <section id="layer-black"></section>
+  <section id="layer-black" class="hide-menu"></section>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/66b48f7806.js"></script>
   <script>
     $(document).ready(function () {
+
+      var h = $('#header').height();
       $(window).scroll(function (event) {
         var st = $(this).scrollTop();
-        if (st > 70) {
+        if (st > h) {
+
           $('#header').attr('activo', 'process');
-          if (st > 140) {
+          if (st > h + 50) {
             $('#header').attr('activo', 'true')
           }
         } else {
           $('#header').attr('activo', 'false')
         }
-
+      });
+      $('.btn-menu').click(function(){
+        $("#header").addClass('active-menu');
+        $('#layer-black').addClass('active');
+      });
+      $('.hide-menu').click(function(){
+        $('#layer-black').removeClass('active');
+        $("#header").removeClass('active-menu');
       });
     });
   </script>
